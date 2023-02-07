@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(36, 35, 35);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr;
+    height: 55px;
+    text-align: center;
+}
+
+.yt-logo {
+    width: 100px;
+    height: 25px;
+    padding-right: 100px;
+}
+
+.btn {
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+
+.btn-logo {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0px;
+}
+
+.index-input {
+    width: 35rem;
+    height: 2rem;
+    border: 2px solid gainsboro;
+    border-right: transparent;
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    margin-right: 0;
+}
+
+.index-input:focus {
+    outline: 1px #4285F4;
+    border: 2px solid #4285F4;
+    
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-yt {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+}
+
+button.btn-yt:hover {
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.btn-search {
+    display: flex;
+    margin: 0;
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 0 20px 20px 0;
+    padding: 17px;
+    align-items: center;
+}
+
+.btn-search:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+
+.mic {
+    margin-left: 0.5rem;
+}
