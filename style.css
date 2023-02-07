@@ -53,7 +53,14 @@ nav {
 .index-input:focus {
     outline: 1px #4285F4;
     border: 2px solid #4285F4;
-    
+}
+
+.index-input:focus::placeholder {
+    background-image: url(./img/search.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 25px;
 }
 
 .menu {
@@ -61,6 +68,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
 }
 
 .btn-yt {
@@ -94,4 +102,45 @@ button.btn-yt:hover {
 
 .mic {
     margin-left: 0.5rem;
+}
+
+.avatar-menu {
+    display: grid;
+    background-color: aqua;
+    grid-template-rows: 1fr 6% 6% 6% 6% 
+                        6% 6% 6% 6% 6% 
+                        6% 6% 6% 6% 6%;
+    position: absolute;
+    right: 3rem;
+}
+
+.info-avatar {
+    background-color: bisque;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row {
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    height: 37px;
+    background-color: rgb(170, 107, 230);
+    padding-left: 10px;
+    align-items: center;
+}
+
+.avatar-img {
+    display: flex;
+    align-items: center;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px ;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
