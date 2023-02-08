@@ -111,9 +111,7 @@ button.btn-yt:hover {
 .avatar-menu {
     display: grid;
     background-color: white;
-    grid-template-rows: 1fr 6% 6% 6% 6% 
-                        6% 6% 6% 6% 6% 
-                        6% 6% 6% 6% 6%;
+    grid-template-rows: 1fr repeat(14, 6%);
     position: absolute;
     top: 1rem;
     right: 4rem;
