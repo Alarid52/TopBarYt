@@ -115,7 +115,7 @@ nav {
     position: absolute;
     top: 1rem;
     right: 4rem;
-    height: 40rem;
+    height: 30rem;
     border-radius: 0.6rem;
     border: 1px solid rgb(223, 223, 223);
     visibility: hidden;
@@ -186,7 +186,10 @@ nav {
     visibility: hidden;
 }
 
-.avatar-menu a , .avatar-menu a:link , .avatar-menu a:visited, .avatar-menu a:active {
+.avatar-menu a,
+.avatar-menu a:link,
+.avatar-menu a:visited,
+.avatar-menu a:active {
     text-decoration: none;
     color: black;
 }
@@ -207,7 +210,10 @@ nav {
     visibility: hidden;
 }
 
-.video-menu a , .video-menu a:link , .video-menu a:visited, .video-menu a:active {
+.video-menu a,
+.video-menu a:link,
+.video-menu a:visited,
+.video-menu a:active {
     text-decoration: none;
     color: black;
 }
@@ -236,12 +242,12 @@ nav {
     color: rgb(160, 160, 160);
 }
 
-img + h4{
+img+h4 {
     color: rgb(136, 136, 136);
     margin: 0;
 }
 
-h4 + p {
+h4+p {
     color: rgb(136, 136, 136);
 }
 
@@ -255,6 +261,24 @@ h4 + p {
 
 .name {
     text-align: left;
+}
+
+.menu-rows {
+    height: 23rem;
+    overflow-y: scroll;
+}
+
+.menu-rows::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.menu-rows::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.menu-rows::-webkit-scrollbar-thumb {
+    background-color: rgb(136, 136, 136);
+    border-radius: 20px;
 }
 
 .active {
