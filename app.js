@@ -7,6 +7,12 @@ const videoMenu = document.querySelector('.video-menu');
 const btnNotification = document.querySelector('#notifi');
 const notificationMenu = document.querySelector('.notification-menu');
 
+const btnChannel = document.querySelector('#menu-channel')
+const modalChannel = document.querySelector('.modal-container')
+const btnCloseModal = document.querySelector('#cancel');
+
+
+
 document.addEventListener('click', (e) => {
     switch (e.target) {
         case btnAvatar:
@@ -25,6 +31,15 @@ document.addEventListener('click', (e) => {
             notificationMenu.classList.toggle('active');
             videoMenu.classList.remove('active');
             avatarMenu.classList.remove('active');
+            break;
+            
+        case btnChannel:
+            modalChannel.classList.toggle('active');
+            avatarMenu.classList.remove('active');
+            break;
+
+        case btnCloseModal:
+            modalChannel.classList.remove('active');
             break;
 
         default:
