@@ -12,7 +12,7 @@ const modalChannel = document.querySelector('.modal-container')
 const btnCloseModal = document.querySelector('#cancel');
 
 
-const menu = (e) => {
+const menu = e => {
     switch (e.target) {
         case btnAvatar:
             avatarMenu.classList.toggle('active');
@@ -39,7 +39,7 @@ const menu = (e) => {
     }
 }
 
-const modal = (e) => {
+const modal = e => {
     switch (e.target) {
         case btnChannel:
             modalChannel.classList.toggle('active');
