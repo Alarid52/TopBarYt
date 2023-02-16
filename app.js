@@ -12,8 +12,7 @@ const modalChannel = document.querySelector('.modal-container')
 const btnCloseModal = document.querySelector('#cancel');
 
 
-
-document.addEventListener('click', (e) => {
+function menu(e) {
     switch (e.target) {
         case btnAvatar:
             avatarMenu.classList.toggle('active');
@@ -32,7 +31,16 @@ document.addEventListener('click', (e) => {
             videoMenu.classList.remove('active');
             avatarMenu.classList.remove('active');
             break;
-            
+
+        default:
+            notificationMenu.classList.remove('active');
+            videoMenu.classList.remove('active');
+            avatarMenu.classList.remove('active');
+    }
+}
+
+function modal(e) {
+    switch (e.target) {
         case btnChannel:
             modalChannel.classList.toggle('active');
             avatarMenu.classList.remove('active');
@@ -41,10 +49,8 @@ document.addEventListener('click', (e) => {
         case btnCloseModal:
             modalChannel.classList.remove('active');
             break;
-
-        default:
-            notificationMenu.classList.remove('active');
-            videoMenu.classList.remove('active');
-            avatarMenu.classList.remove('active');
     }
-});
+}
+
+document.addEventListener('click', menu);
+document.addEventListener('click', modal);
