@@ -54,3 +54,59 @@ const modal = e => {
 
 document.addEventListener('click', menu);
 document.addEventListener('click', modal);
+
+
+const multiplicar = (a, b) => !a ? 0 : new Array(a).fill(b).reduce((prev, next) => prev + next);
+
+// console.log(multiplicar(6,5));
+
+
+// const navBar = document.querySelector('#nav-bar'); 
+
+// const userMenu = navBar.querySelector('.avatar-menu')
+// const btnMenu = navBar.querySelector('.avatar')
+
+// const notificationMenu = navBar.querySelector('.notification-menu');
+// const btnNotification = navBar.querySelector('#notifi');
+
+// console.log(btnNotification);
+// console.log(notificationMenu);
+
+// const menuNotifi = (e) => {
+//     if (notificationMenu.style.visibility === 'hidden') {
+//         notificationMenu.style.visibility = 'visible';
+//         console.log('se ve');
+//     }else {
+//         notificationMenu.style.visibility = 'hidden';
+//         console.log('no se ve');
+//     }
+// }
+
+// const menuAvatar = (e) => {
+//     if (e.target === btnMenu) {
+//         userMenu.style.visibility = 'visible';
+//         console.log('se ve');
+//     }else {
+//         userMenu.style.visibility = 'hidden'
+//         console.log('no se ve');
+//     }
+// }
+
+// btnMenu.addEventListener('click',menuAvatar);
+
+// btnNotification.addEventListener('click', menuNotifi);
+
+
+const randomUser = async ()=>{
+    try {
+        const response = await fetch(`https://randomuser.me/api/`);
+        let {results} = await response.json();
+        console.log(results);
+        const user = results.find((result)=> result.gender === "male");
+        console.log(user);
+    } catch (error) {
+        console.log('no conecta');
+    }
+}
+
+randomUser();
